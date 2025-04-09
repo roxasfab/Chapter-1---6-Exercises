@@ -1,21 +1,66 @@
-body{
-    background-color: gold
+.recipetitle{
+    background-color: darkolivegreen; height: 100px; display: flex;  align-items: center;  padding-left: 20px; padding-right: 20px;
 }
-h1{
-    color: maroon
+.recipename{
+    color: white; font-family: sans-serif; font-size: 60px; font-weight: bolder; text-align: center; margin: 0 auto;
 }
-p{
-    color: maroon ;
+.recipecontent{
+    background-color: saddlebrown; height: 500px;
+}
+.recipeimage{
+    width: 35%; height: 20%; float: left; padding-left: 150px; margin-top: 40px;
+}
+.text1{
+    color: white; font-family: sans-serif; font-weight: lighter; font-size: 30px; padding-top: 0%; padding-left: 690px; padding-right: 100px;  margin-top: -350px; float: left; max-width: 30%;
+}
+.ingredientscontent{
+    background-color: saddlebrown; height: 1040px;
 }
 h2{
-    color: maroon
+    color: white; font-family: sans-serif; font-size: 45px; font-weight: bolder; text-align: center; margin: 0 auto; padding-top: 80px;
+}
+.text3{
+    color: white; font-family: sans-serif; font-weight: lighter; font-size: 18px; max-width: 70%; align-content: center; padding-top: 30px; line-height: 1.8; margin-left: 50px;
+}
+h2{
+    color: white; font-family: sans-serif; font-size: 45px; font-weight: bolder; text-align: center; margin: 0 auto; padding-top: 40px;
+}
+.text5{
+    color: white; font-family: sans-serif; font-weight: lighter; font-size: 18px; max-width: 70%; align-content: center; padding-top: 30px; line-height: 1.8; margin-left: 50px;
+}
+h2{
+    color: white; font-family: sans-serif; font-size: 45px; font-weight: bolder; text-align: center; margin: 0 auto; padding-top: 40px;
+}
+.text7{
+    color: white; font-family: sans-serif; font-weight: lighter; font-size: 18px; max-width: 70%; align-content: center; padding-top: 30px; line-height: 1.8; margin-left: 50px;
+}
+.cookingstepscontent{
+    background-color: saddlebrown; height: 1240px;
+}
+h2{
+    color: white; font-family: sans-serif; font-size: 45px; font-weight: bolder; text-align: center; margin: 0 auto; padding-top: 40px;
 }
 h3{
-    color: maroon
+    color: white; font-family: sans-serif; font-size: 36px; font-weight: bolder; text-align: center; margin: 0 auto; padding-top: 40px;
 }
-ul{
-    color: maroon;
+.text9{
+    color: white; font-family: sans-serif; font-weight: lighter; font-size: 18px; max-width: 70%; align-content: center; padding-top: 30px; line-height: 1.8; margin-left: 120px;
 }
-ol{
-    color: maroon;
+h3{
+    color: white; font-family: sans-serif; font-size: 36px; font-weight: bolder; text-align: center; margin: 0 auto; padding-top: 40px;
+}
+.text11{
+    color: white; font-family: sans-serif; font-weight: lighter; font-size: 18px; max-width: 70%; align-content: center; padding-top: 30px; line-height: 1.8; margin-left: 120px;
+}
+h3{
+    color: white; font-family: sans-serif; font-size: 36px; font-weight: bolder; text-align: center; margin: 0 auto; padding-top: 40px;
+}
+.text13{
+    color: white; font-family: sans-serif; font-weight: lighter; font-size: 18px; max-width: 70%; align-content: center; padding-top: 30px; line-height: 1.8; margin-left: 120px;
+}
+.ctto{
+    background-color: saddlebrown; height: 30px;
+}
+.credit{
+    color: white; font-family: sans-serif; font-size: 12px; font-weight: lighter; text-align: center; margin: 0 auto;
 }
