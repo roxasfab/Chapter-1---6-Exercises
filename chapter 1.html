@@ -1,62 +1,91 @@
 <!DOCTYPE html>
+<!--default features-->
 <html lang="en">
-  <head>
-    <!--The <title> tag indicates title of the tab of the running output.-->
-    <title>Chapter 1: Recipe Page</title>
-    <link rel="stylesheet" href="chapter 1.css">
-    <meta charset="UTF-8">
-  </head>
-  <body>
-    <h1><center>Korean Fried Chicken</center></h1>
-    <!--The <h1> tag displays the title of the content displayed within the page which is typically positioned on the upper part of the page.-->
-    <p><center>This fried chicken twist is an ultra-crunchy and juicy delight, and typically glazed with a savory or spicy sauce that sinks into every nook and cranny of the shatteringly crisp crust.</center></p>
-    <!--The <p> tag is typically used for writing long sentences; used for descriptions.-->
-    <center><img src="c:\Users\roxas\Pictures\korean frid chicken clipart.jpg"></center>
-    <!--The <img src=""> tag allows an image tp be displayed within the tab page.-->
-    <h2>Ingredients</h2>
-    <h3>Fried Chicken</h3>
-    <ul>
-      <li>1.4 kg / 3 pounds whole chicken, cut into pieces or chicken wings / drumsticks / boneless chicken thigh – choose from these based on your preference, rinsed</li>
-      <li>2 tbsp rice wine</li>
-      <li>2 tsp minced ginger</li>
-      <li>1 tsp fine sea salt</li>
-      <li>1/2 tsp ground black pepper</li>
-      <li>1 cup potato starch or corn starch</li>
-      <li>Cooking oil for deep frying (I used rice bran oil)</li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chapter 1: Recipe Page</title>
+        <!--add stylesheet-->
+        <link rel="stylesheet" href="chapter 1 (updated).css">
+    </head>
+<!--start of content-->
+<body>
+<!--the header section is divided into two containers and each container are named using class to separate each style on the stylesheet.-->
+    <header class="recipetitle">
+        <h1 class="recipename" style="text-align: center;">Korean Fried Chicken</h1>
+    </header>
+<!--this section contains the recipe image as well as its short description which are divided into their own container with a class name to be able to modify the two elements separately in the stylesheet.-->
+    <section class="recipecontent">
+        <div class="imagecontainer">
+            <img class="recipeimage" src="c:\Users\roxas\Pictures\korean frid chicken clipart.jpg">
+        </div>
+        <div class="text1">
+            <p style="text-align: center;">This fried chicken twist is an ultra-crunchy and juicy delight, and typically glazed with a savory or spicy sauce that sinks into every nook and cranny of the shatteringly crisp crust.</p>
+        </div>
+    </section>
+<!--this section contains the ingredients for the recipe which are divided into their own container with a class name to be able to modify each content separately in the stylesheet.-->
+    <section class="ingredientscontent">
+        <div class="text2">
+            <h2 style="text-align: center;">Ingredients</h2>
+        </div>
+    <ul class="text3">
+        <li>1.4 kg / 3 pounds whole chicken, cut into pieces or chicken wings / drumsticks / boneless chicken thigh – choose from these based on your preference, rinsed</li>
+        <li>2 tbsp rice wine</li>
+        <li>2 tsp minced ginger</li>
+        <li>1 tsp fine sea salt</li>
+        <li>1/2 tsp ground black pepper</li>
+        <li>1 cup potato starch or corn starch</li>
+        <li>Cooking oil for deep frying (I used rice bran oil)</li>
     </ul>
-    <h3>Fried Chicken Sauce</h3>
-    <ul>
-      <li>3 tbsp tomato sauce / ketchup</li>
-      <li>2 tbsp to 2 1/2 tbsp gochujang (Korean chilli paste)</li>
-      <li>1/4 cup honey</li>
-      <li>1/4 cup brown sugar</li>
-      <li>2 tbsp soy sauce</li>
-      <li>2 tbsp minced garlic</li>
-      <li>1 tbsp sesame oil</li>
+    <div class="text4">
+        <h2 style="text-align: center;">Fried Chicken Sauce</h2>
+    </div>
+    <ul class="text5">
+        <li>3 tbsp tomato sauce / ketchup</li>
+        <li>2 tbsp to 2 1/2 tbsp gochujang (Korean chilli paste)</li>
+        <li>1/4 cup honey</li>
+        <li>1/4 cup brown sugar</li>
+        <li>2 tbsp soy sauce</li>
+        <li>2 tbsp minced garlic</li>
+        <li>1 tbsp sesame oil</li>
     </ul>
-    <h3>Garnish (Optional)</h3>
-    <ul>
-      <li>Roasted sesame seeds</li>
-      <li>Green onion, finely chopped or shredded</li>
+    <div class="text6">
+        <h2 style="text-align: center;">Garnish - Optional</h2>
+    <ul class="text7">
+        <li>Roasted sesame seeds</li>
+        <li>Green onion, finely chopped or shredded</li>
     </ul>
-    <h2>Instructions</h2>
-    <h3>Making The Fried Chicken</h3>
-    <ol>
-      <li>In a bowl, place the chicken, rice wine, ginger, salt and black pepper. Combine them well. Then evenly coat the chicken with the starch and set side.</li>
-      <li>In a deep saucepan (or frier) add a generous amount of oil and heat it until the oil temperature reaches 175 C / 347 F (or boiling).</li>
-      <li>Start adding the battered chicken carefully and fry them until they cook (between 3 to 5 mins, depending on the size of chicken). Do not overcrowd the pan. (It might be useful to use a grease splatter screen if you have one. It’s super handy! It minimises oil splatter.)</li>
-      <li>Take out the done chicken and place them onto some kitchen paper while frying the remaining chicken pieces. Once the first set of deep frying is completed, quickly scoop out any floating debris from the oil using a skimmer.</li>
+    </div>
+    </section>
+<!--this section contains the cooking instructions for the recipe which are divided into their own container with a class name to be able to modify each content separately in the stylesheet.-->
+    <section class="cookingstepscontent">
+        <div class="text8">
+            <h2 style="text-align: center;">Instructions</h2>
+            <h3 style="text-align: center;">Making The Fried Chicken</h3>
+        </div>
+    <ol class="text9" style="text-align: justify;">
+        <li>In a bowl, place the chicken, rice wine, ginger, salt and black pepper. Combine them well. Then evenly coat the chicken with the starch and set side.</li>
+        <li>In a deep saucepan (or frier) add a generous amount of oil and heat it until the oil temperature reaches 175 C / 347 F (or boiling).</li>
+        <li>Start adding the battered chicken carefully and fry them until they cook (between 3 to 5 mins, depending on the size of chicken). Do not overcrowd the pan. (It might be useful to use a grease splatter screen if you have one. It’s super handy! It minimises oil splatter.)</li>
+        <li>Take out the done chicken and place them onto some kitchen paper while frying the remaining chicken pieces. Once the first set of deep frying is completed, quickly scoop out any floating debris from the oil using a skimmer.</li>
       <li>Then deep fry the chicken again when the oil temperature reaches 175 C / 347 F (or boiling). Fry them until the batter is golden and crisp. (The second time frying is shorter than the first time, 2 to 3 mins) Set aside.</li>
     </ol>
-    <h3>Making The Fried Chicken Sauce</h3>
-    <ol>
-      <li>In a separate saucepan, add in the Korean fried chicken sauce ingredients (listed above). Heat the sauce over low to medium heat and stir well. Once it starts bubbling, remove the pan from the heat.</li>
-      <li>Place the double fried chicken into a large mixing bowl then pour the fried chicken sauce over the chicken to coat. Mix them lightly and thoroughly. Alternatively, serve the fried chicken and the sauce separately and use the sauce as a dipping sauce.</li>
-      <li>Once all the chicken is coated with the sauce, serve it hot immediately. Leftover chicken can be refrigerated for a day or two and eaten cold. But it won’t be as crunchy.</li>
+    <div class="text10">
+        <h3 style="text-align: center;">Making The Fried Chicken Sauce</h3>
+    </div>
+    <ol class="text11" style="text-align: justify;">
+        <li>In a separate saucepan, add in the Korean fried chicken sauce ingredients (listed above). Heat the sauce over low to medium heat and stir well. Once it starts bubbling, remove the pan from the heat.</li>
+        <li>Place the double fried chicken into a large mixing bowl then pour the fried chicken sauce over the chicken to coat. Mix them lightly and thoroughly. Alternatively, serve the fried chicken and the sauce separately and use the sauce as a dipping sauce.</li>
+        <li>Once all the chicken is coated with the sauce, serve it hot immediately. Leftover chicken can be refrigerated for a day or two and eaten cold. But it won’t be as crunchy.</li>
     </ol>
-    <h3>Side Dishes (Optional)</h3>
-    <ul>
-      <li>Pickled radish and pickled cucumbers are popular side dishes to serve with Korean fried chicken. These will help you wash out the oily taste from the fried chicken if you have it.</li>
+    <div class="text12">
+        <h3 style="text-align: center;">Side Dishes - Optional</h3>
+    </div>
+    <ul class="text13" style="text-align: justify;">
+        <li>Pickled radish and pickled cucumbers are popular side dishes to serve with Korean fried chicken. These will help you wash out the oily taste from the fried chicken if you have it.</li>
     </ul>
-  </body>
-</html>
+    </section>
+    <footer class="ctto">
+        <p class="credit" style="text-align: center;">Created by: Fabrice Morvan Roxas</p>
+    </footer>
+</body>
