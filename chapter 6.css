@@ -1,0 +1,12 @@
+.calculatortitle{
+    background-color: gold; height: 100px; display: flex;  align-items: center;  padding-left: 20px; padding-right: 20px;
+}
+.fuelcalculator{
+    color: black; font-family: 'Courier New', Courier, monospace; font-size: 60px; font-weight: bolder; text-align: center; margin: 0 auto;
+}
+.calculatorcontent{
+    background-color: red; height: 500px;
+}
+.calculatorengine{
+    color: white; font-family: 'Courier New', Courier, monospace; font-size: 20px; font-weight: bolder; padding-top: 175px;
+}
