@@ -1,7 +1,39 @@
 <!DOCTYPE html>
+<!--default features-->
 <html lang="en">
   <head>
     <!--The <title> tag indicates title of the tab of the running output.-->
-    <title>Petrol Calculator</title>
+    <title>Chapter 6: Petrol Calculator</title>
+    <!--add stylesheet-->
     <link rel="stylesheet" href="chapter 6.css">
     <meta charset="UTF-8">
+  </head>
+  <!--start of content-->
+  <body>
+    <!--the header displays the title "Petrol Calculator" which aligns the purpose of this exercise.-->
+    <header class="calculatortitle">
+      <h1 class="fuelcalculator" style="text-align: center;">Petrol Calculator</h1>
+  </header>
+  <!--this section covers the whole content of the petrol calculator just below the title header.-->
+  <section class="calculatorcontent">
+    <div class="calculatorengine" style="text-align: center;"> <!--this section contains the necessary components of the petrol calculator.-->
+      Liters <input type="number" id="liters" value="0"> <!--this will create a container for the liter component.-->
+      Cost Per Liter <input type="number" id="costperliter" value="1.72"> <!--this will create a container for the cost per liter component.-->
+      <p>Total Amount</p>
+      <p id="totalamount">AED 0.00</p> <!--the id tag serves a link to the javascript in which the result of the calculation based from the user input will be displayed.-->
+      <button onclick="calculateresult()">Calculate</button><br> <!--this creates a button that the user can click to calculate results.-->
+    </div>
+    <!--javascript to create the calculator function-->
+    <script>
+       function calculateresult() {
+        let costper = parseFloat(document.getElementById('costperliter').value); //this creates a function to link the default cost with the user input for calculation.
+        let liters = parseFloat(document.getElementById('liters').value); //this creates a function to collect user input and calculate it with the cost per liter value.-->
+
+        //the operator which is the main function for the petrol calculator.
+        let totalamount = costper * liters;
+        document.getElementById('totalamount').innerHTML = 'AED ' + totalamount.toFixed(2);
+       }
+
+    </script>
+  </section>
+  </body>
