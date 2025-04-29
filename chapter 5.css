@@ -4,6 +4,9 @@
 .title{
    color: gold;  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  font-size: 45px; font-weight: bolder; text-align: center; margin: 0 auto;
 }
-section{
-    background-image: url("desert-days-chromebook-wallpaper.jpg"); width: max-content; height: 1000px;
+body{
+    background: url(../Images/desert-days-chromebook-wallpaper.jpg) no-repeat center bottom/cover; height: 100vh;
+}
+.artefact{
+    display: flex;  align-items: center; justify-items: center;  margin: 0 auto; padding-top: 15vh;
 }
