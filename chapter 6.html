@@ -2,38 +2,41 @@
 <!--default features-->
 <html lang="en">
   <head>
-    <!--The <title> tag indicates title of the tab of the running output.-->
-    <title>Chapter 6: Petrol Calculator</title>
+    <title>Chapter 4: Website Layout</title>
     <!--add stylesheet-->
-    <link rel="stylesheet" href="chapter 6.css">
+    <link rel="stylesheet" href="chapter 4.css">
     <meta charset="UTF-8">
   </head>
-  <!--start of content-->
   <body>
-    <!--the header displays the title "Petrol Calculator" which aligns the purpose of this exercise.-->
-    <header class="calculatortitle">
-      <h1 class="fuelcalculator" style="text-align: center;">Petrol Calculator</h1>
-  </header>
-  <!--this section covers the whole content of the petrol calculator just below the title header.-->
-  <section class="calculatorcontent">
-    <div class="calculatorengine" style="text-align: center;"> <!--this section contains the necessary components of the petrol calculator.-->
-      Liters <input type="number" id="liters" value="0"> <!--this will create a container for the liter component.-->
-      Cost Per Liter <input type="number" id="costperliter" value="1.72"> <!--this will create a container for the cost per liter component.-->
-      <p>Total Amount</p>
-      <p id="totalamount">AED 0.00</p> <!--the id tag serves a link to the javascript in which the result of the calculation based from the user input will be displayed.-->
-      <button onclick="calculateresult()">Calculate</button><br> <!--this creates a button that the user can click to calculate results.-->
-    </div>
-    <!--javascript to create the calculator function-->
-    <script>
-       function calculateresult() {
-        let costper = parseFloat(document.getElementById('costperliter').value); //this creates a function to link the default cost with the user input for calculation.
-        let liters = parseFloat(document.getElementById('liters').value); //this creates a function to collect user input and calculate it with the cost per liter value.-->
-
-        //the operator which is the main function for the petrol calculator.
-        let totalamount = costper * liters;
-        document.getElementById('totalamount').innerHTML = 'AED ' + totalamount.toFixed(2);
-       }
-
-    </script>
-  </section>
+    <!--header section-->
+    <header class="websitename"><!--this container covers the text style and layout-->
+        <h1 class="headername" style="text-align: center;">DIGI FEST 2022</h1>
+      </header>
+      <nav class="navbar"><!--this container style and layout of the content within the navigation section-->
+        <div class="navdiv">
+            <ul class="navoptions"><!--this list covers all the different pages of the whole website which can be navigated-->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">What's On</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Tickets</a></li>
+            </ul>
+        </div>
+      </nav>
+      <!--main body section-->
+      <section class="mainpage">
+        <div class="mainpagetitle"><!--container which allows the text style and layout to be modified in the stylesheet-->
+          <h1 style="text-align: center;">Welcome</h1>
+          <p class="description" style="text-align: center;">Digi Fest is a celebration of digital and technology in the city of Cardiff. This year, we are celebrating ‘collaboration’, so come and find out about the latest collaborations that are happening in this historic and innovative city. They promise an educational and inspirational packed programme for all.</p>
+        </div>
+        <div class="img1"><!--container which allows the image style and layout to be modified in the stylesheet-->
+          <img src="c:\Users\roxas\Pictures\digifest poster.png" width="700" height="400">
+        </div>
+      </section>
+      <footer class="websitefooter"><!--this container can be modified in the stylesheet to create sufficicent space as well as to add style for its content-->
+        <div class="copyright">
+          <p style="text-align: center;">© 2022 DigiFest Ltd.</p>
+        </div>
+      </footer>
   </body>
+  </html>
